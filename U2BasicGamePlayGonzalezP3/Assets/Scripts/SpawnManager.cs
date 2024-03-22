@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    private float spawnRangeX = 20;
+    private float spawnRangeX = 17;
     private float spawnPosZ = 20;
     public GameObject[] animalPrefabs;
     private float spawnInterval = 1.5f;
     private float startDelay = 2;
+    public float sideSpawnMinZ;
+    public float sideSpawnMaxZ;
+    public float sideSpawnX;
 
         // Start is called before the first frame update
     void Start()
@@ -25,8 +28,19 @@ public class SpawnManager : MonoBehaviour
     {
         int animalIndex = Random.Range(0, animalPrefabs.Length);
         Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
-        Instantiate(animalPrefabs[animalIndex], spawnPos, animalPrefabs[animalIndex].transform.rotation); ;
+        Instantiate(animalPrefabs[animalIndex], spawnPos, animalPrefabs[animalIndex].transform.rotation);
     }
-
+    void SpawnRightAnimal()
+    {
+        int animalIndex = Random.Range(0, animalPrefabs.Length);
+        Vector3 spawnPos = new Vector3(sideSpawnX, 0, Random.Range(sideSpawnMinZ, sideSpawnMaxZ));
+        Instantiate(animalPrefabs[animalIndex], spawnPos, animalPrefabs[animalIndex].transform.rotation);
+    }
+    void SpawnLeftAnimal()
+    {
+        int animalIndex = Random.Range(0, animalPrefabs.Length);
+        Vector3 spawnPos = new Vector3(-sideSpawnX, 0, Random.Range(sideSpawnMinZ, sideSpawnMaxZ));
+        Vector3 rotation = new Vector3(0, -90, 0);
+    }
 }
 

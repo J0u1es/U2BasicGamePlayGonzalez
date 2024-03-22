@@ -299,8 +299,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalInput: 0
+  verticalInput: 0
   speed: 10
-  xRange: 15
+  xRange: 16
+  zMin: -7
+  zMax: 15
   projectilePrefab: {fileID: 1973988951342229501, guid: f9c4a7232b8323a4caf8d22d47bfc2a5, type: 3}
 --- !u!1 &425805626
 GameObject:
@@ -593,6 +596,10 @@ MonoBehaviour:
   - {fileID: 251099287224402456, guid: 20b5148c916dea146b44ca22f095dbdf, type: 3}
   - {fileID: 114119498517485907, guid: 3f24f1bc8ca26fc4b9ec7fafb27177cf, type: 3}
   - {fileID: 3899219045281494915, guid: c15816f5a86f2294187e7cd229ae7777, type: 3}
+  - {fileID: 3499092017456473505, guid: 648fad8dea42f3442a1b7a52b6f8e7b4, type: 3}
+  sideSpawnMinZ: 0
+  sideSpawnMaxZ: 0
+  sideSpawnX: 0
 --- !u!4 &835670287
 Transform:
   m_ObjectHideFlags: 0
