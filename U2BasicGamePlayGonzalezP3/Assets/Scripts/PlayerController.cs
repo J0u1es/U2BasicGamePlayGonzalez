@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public float zMin;
     public float zMax;
     public GameObject projectilePrefab;
+    public Transform projectileSpawnPoint;
     // Update is called once per frame
     void Update()
     {
@@ -39,7 +40,6 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.right *horizontalInput *Time.deltaTime * speed);
         verticalInput = Input.GetAxis("Vertical");
         transform.Translate(Vector3.forward * verticalInput * Time.deltaTime * speed);
-        
-        
+        Instantiate(projectilePrefab, projectileSpawnPoint.position, projectilePrefab.transform.rotation);   
     }
 }
