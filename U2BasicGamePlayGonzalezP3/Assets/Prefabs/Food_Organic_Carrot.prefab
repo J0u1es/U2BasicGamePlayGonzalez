@@ -13,11 +13,11 @@ GameObject:
   - component: {fileID: 5520208098487720804}
   - component: {fileID: 5963537238665088832}
   - component: {fileID: 6440883677249090610}
-  - component: {fileID: 5997067383537424190}
   - component: {fileID: 6060693301413590482}
+  - component: {fileID: 8551173617979933974}
   m_Layer: 0
   m_Name: Food_Organic_Carrot
-  m_TagString: Untagged
+  m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,27 +112,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a01422a785d074d47b2f3e58492b792b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &5997067383537424190
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1973988951342229501}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.14170074, y: 0.141707, z: 0.61012447}
-  m_Center: {x: 0, y: 0.0708535, z: -0.000000059604645}
 --- !u!54 &6060693301413590482
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -160,3 +139,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &8551173617979933974
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973988951342229501}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.20760196, y: 0.141707, z: 0.6544664}
+  m_Center: {x: 0.0029341578, y: 0.0708535, z: 0.022170901}

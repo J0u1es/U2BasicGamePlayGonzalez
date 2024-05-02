@@ -37,9 +37,8 @@ public class PlayerController : MonoBehaviour
             Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
         }
         horizontalInput = Input.GetAxis("Horizontal");
-        transform.Translate(Vector3.right *horizontalInput *Time.deltaTime * speed);
+        transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
         verticalInput = Input.GetAxis("Vertical");
         transform.Translate(Vector3.forward * verticalInput * Time.deltaTime * speed);
-        Instantiate(projectilePrefab, projectileSpawnPoint.position, projectilePrefab.transform.rotation);   
     }
 }

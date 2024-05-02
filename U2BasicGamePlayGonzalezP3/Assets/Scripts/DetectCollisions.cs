@@ -16,19 +16,22 @@ public class DetectCollisions : MonoBehaviour
     {
         
     }
-    void OnTriggerEnter(Collider other)
-    { 
+    private void OnTriggerEnter(Collider other)
+    {
+        {
+            
+        }
         if (other.CompareTag("Player"))
         {
             gameManager.AddLives(-1);
             Destroy(gameObject);
+
         }
-        else if (other.CompareTag("Animal"))
+        else if (other.CompareTag("Weapon"))
         {
             gameManager.AddScore(5);
             Destroy(gameObject);
             Destroy(other.gameObject);
         }
-
     }
 }
